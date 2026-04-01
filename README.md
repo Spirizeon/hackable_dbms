@@ -24,21 +24,16 @@ A deliberately vulnerable backend simulating a **police investigation database**
 * MariaDB / MySQL (≥ 10.6 recommended)
 * Git (optional)
 
-## Database Setup
 
-### 1. Start MariaDB
+### Quickstart
 
 ```bash
 sudo systemctl start mariadb
-```
-
----
-
-### 2. Import schema
-
-```bash
 sudo mysql < metro_pd.sql
+go build
+./metro_pd_vuln
 ```
+
 
 This will:
 
